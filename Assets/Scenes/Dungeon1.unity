@@ -5435,6 +5435,14 @@ PrefabInstance:
       value: CameraHolder
       objectReference: {fileID: 0}
     - target: {fileID: 5442398985011659418, guid: 087ed381d8a7c844684f86a4baf91b5c, type: 3}
+      propertyPath: sensX
+      value: 1000
+      objectReference: {fileID: 0}
+    - target: {fileID: 5442398985011659418, guid: 087ed381d8a7c844684f86a4baf91b5c, type: 3}
+      propertyPath: sensY
+      value: 1000
+      objectReference: {fileID: 0}
+    - target: {fileID: 5442398985011659418, guid: 087ed381d8a7c844684f86a4baf91b5c, type: 3}
       propertyPath: orientation
       value: 
       objectReference: {fileID: 1836428228}
