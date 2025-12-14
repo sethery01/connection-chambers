@@ -34,4 +34,14 @@ public class CoinManager : MonoBehaviour
             SceneManager.LoadScene(gameSceneName);
         }
     }
+
+    public int GetCurrent()
+    {
+        return currentCoins;
+    }
+
+    public int GetGoal()
+    {
+        return coinsToReturn;
+    }
 }
