@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 8070048349386952359}
   - component: {fileID: 1104687556130838899}
   - component: {fileID: 2417671250377225041}
-  - component: {fileID: 8362485858687597030}
+  - component: {fileID: 1002027749417170222}
   m_Layer: 0
   m_Name: Key_Dungeon1
   m_TagString: Untagged
@@ -29,7 +29,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2837653345132041968}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0.15, y: 0.014255274, z: 3.88}
   m_LocalScale: {x: 20, y: 20, z: 20}
   m_ConstrainProportionsScale: 0
@@ -134,7 +134,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &8362485858687597030
+--- !u!114 &1002027749417170222
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -143,7 +143,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 2837653345132041968}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b2997ab4b838add41a3f4e5bef2944ef, type: 3}
+  m_Script: {fileID: 11500000, guid: 892ad4f8cb881b6488ee97f51f091276, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hubSceneName: GameScene
