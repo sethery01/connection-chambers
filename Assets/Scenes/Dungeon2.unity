@@ -2404,7 +2404,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 13d0bf2b278024c4390342f458b90b22, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  coinsToReturn: 4
+  coinsToReturn: 1
   hubSceneName: GameScene
   dungeonIndex: 1
 --- !u!4 &408044948
@@ -4369,7 +4369,7 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.058852464, y: 0.06, z: 0.06506889}
   m_Center: {x: 0.0032892236, y: 0.010496559, z: 0.0014966959}
---- !u!114 &769149488
+--- !u!114 &769149485
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -4378,10 +4378,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 769149482}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b2997ab4b838add41a3f4e5bef2944ef, type: 3}
+  m_Script: {fileID: 11500000, guid: 892ad4f8cb881b6488ee97f51f091276, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hubSceneName: GameScene
 --- !u!1001 &769156713
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7351,7 +7350,7 @@ PrefabInstance:
       addedObject: {fileID: 769149483}
     - targetCorrespondingSourceObject: {fileID: 1950871307682000, guid: 01348926c7cbb3347a006c37204131c3, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 769149488}
+      addedObject: {fileID: 769149485}
   m_SourcePrefab: {fileID: 100100000, guid: 01348926c7cbb3347a006c37204131c3, type: 3}
 --- !u!1001 &1226165637
 PrefabInstance:

@@ -42,4 +42,12 @@ public class DungeonProgress : MonoBehaviour
         }
         return true;
     }
+
+    public bool IsDungeonCompleted(int dungeonIndex)
+    {
+        if (dungeonIndex < 0 || dungeonIndex >= completed.Length)
+            return false;
+
+        return completed[dungeonIndex];
+    }
 }
