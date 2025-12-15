@@ -8,8 +8,8 @@ using UnityEngine;
 public class PlayerCam : MonoBehaviour
 {
     [Header("Base Sensitivity")]
-    [SerializeField] private float baseSensX = 100f;
-    [SerializeField] private float baseSensY = 100f;
+    [SerializeField] private float baseSensX = 50f;
+    [SerializeField] private float baseSensY = 50f;
     public Transform orientation;
 
     float xRotation;
