@@ -7,8 +7,9 @@ using UnityEngine;
 
 public class PlayerCam : MonoBehaviour
 {
-    public float sensX;
-    public float sensY;
+    [Header("Base Sensitivity")]
+    [SerializeField] private float baseSensX = 100f;
+    [SerializeField] private float baseSensY = 100f;
     public Transform orientation;
 
     float xRotation;
@@ -22,6 +23,10 @@ public class PlayerCam : MonoBehaviour
 
     private void Update()
     {
+        float sensitivity = GameSettings.MouseSensitivity;
+        float sensX = baseSensX * sensitivity;
+        float sensY = baseSensY * sensitivity;
+        
         // get mouse input
         float mouseX = Input.GetAxisRaw("Mouse X") * Time.deltaTime * sensX;
         float mouseY = Input.GetAxisRaw("Mouse Y") * Time.deltaTime * sensY;
