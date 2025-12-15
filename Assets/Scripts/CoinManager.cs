@@ -8,13 +8,13 @@ public class CoinManager : MonoBehaviour
     public static CoinManager Instance { get; private set; }
 
     [SerializeField] private int coinsToReturn = 4;
-    [SerializeField] private string gameSceneName = "GameScene";
+    [SerializeField] private string hubSceneName = "GameScene";
+    [SerializeField] private int dungeonIndex = -1; // 0 = Dungeon1, 1 = Dungeon2, 2 = Dungeon3
 
     private int currentCoins = 0;
 
     private void Awake()
     {
-        // Simple singleton pattern
         if (Instance != null && Instance != this)
         {
             Destroy(gameObject);
@@ -31,17 +31,15 @@ public class CoinManager : MonoBehaviour
 
         if (currentCoins >= coinsToReturn)
         {
-            SceneManager.LoadScene(gameSceneName);
+            if (dungeonIndex >= 0 && DungeonProgress.Instance != null)
+            {
+                DungeonProgress.Instance.MarkDungeonCompleted(dungeonIndex);
+            }
+
+            SceneManager.LoadScene(hubSceneName);
         }
     }
 
-    public int GetCurrent()
-    {
-        return currentCoins;
-    }
-
-    public int GetGoal()
-    {
-        return coinsToReturn;
-    }
+    public int GetCurrent() => currentCoins;
+    public int GetGoal() => coinsToReturn;
 }

@@ -8935,7 +8935,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coinsToReturn: 4
-  gameSceneName: GameScene
+  hubSceneName: GameScene
+  dungeonIndex: 0
 --- !u!4 &394447982
 Transform:
   m_ObjectHideFlags: 0

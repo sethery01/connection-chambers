@@ -221,7 +221,7 @@ MonoBehaviour:
   jumpKey: 32
   whatIsGround:
     serializedVersion: 2
-    m_Bits: 8
+    m_Bits: 4294967295
   orientation: {fileID: 2432525731531173284}
 --- !u!1 &6581253865575677047
 GameObject:
